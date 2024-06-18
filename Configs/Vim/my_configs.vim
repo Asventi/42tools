@@ -1,4 +1,9 @@
 set mouse=a
+set number
+set autoindent
+set cindent
+set noexpandtab
+
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
   silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
@@ -29,7 +34,7 @@ let g:c_syntax_for_h = 1
 let g:syntastic_c_include_dirs = ['include', '../include', '../../include', 'libft', '../libft/include', '../../libft/include']
 
 " Pass custom arguments to norminette (this one ignores 42header)
-" let g:syntastic_c_norminette_args = '-R CheckTopCommentHeader'
+let g:syntastic_c_norminette_args = '-R CheckForbiddenSourceHeader'
 
 " Check errors when opening a file (disable to speed up startup time)
 let g:syntastic_check_on_open = 1
