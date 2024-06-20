@@ -3,6 +3,10 @@ set number
 set autoindent
 set cindent
 set noexpandtab
+set tabstop=8
+set shiftwidth=8
+set softtabstop=0
+
 
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
