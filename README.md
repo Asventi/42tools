@@ -15,7 +15,7 @@ Then install the ultimate vimrc :
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
 ```
-Then put the my_configs.vim from the repo into `~/.vim_runtime`,  don't forget to edit user42 and email42
+Then put the my_configs.vim from the repo into `~/.vim_runtime`, basic.vim and plugins_config.vim into `~/.vim_runtime/vimrcs`, norminette into `~/.vim_runtime/sources_non_forked/ale/ale_linters/c`,  don't forget to edit user42 and email42
 Then open vim and execute `:PlugInstall`
 
 And there you go Vim is configured !
